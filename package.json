@@ -1,0 +1,44 @@
+{
+  "name": "redux-react-native-navigation",
+  "version": "0.1.0",
+  "description": "Redux react native navigation",
+  "main": "dist/index.js",
+  "scripts": {
+    "posttest": "npm run lint",
+    "dist": "rm -rf dist/* && babel . --out-dir dist --ignore node_modules,dist",
+    "build": "webpack --env=dev",
+    "lint": "eslint ./src",
+    "clean": "rimraf dist/*",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "Mandeep Singh Brar",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.0.0",
+    "babel-eslint": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "eslint": "^2.2.0",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^5.0.0",
+    "glob": "^7.0.0",
+    "minimist": "^1.2.0",
+    "open": "0.0.5",
+    "rimraf": "^2.4.3"
+  },
+  "dependencies": {
+    "react-native": "^0.44.0",
+    "react-native-navigation": "^1.1.79",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  }
+}

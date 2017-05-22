@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "reduxdirector",
+    "style": "css",
+    "postcss": false
+  }
+}
